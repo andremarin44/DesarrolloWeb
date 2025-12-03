@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio web proyecto 1</title>
+    <!--llamar todos los styles-->
+    <link rel="stylesheet" href="CSS/style.css">
+    <!--copiar fuentes google roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,400&display=swap" rel="stylesheet">
+    <!--llamar la funcion normalize css-->
+    <link rel="stylesheet" href="CSS/normalize.css">
+    
+</head>
+<body>
+    <!-- insertar texto -->
+    <div class="home-wrapper">
+        <!-- logo y menu -->
+        <header>
+            <div class="container">
+                <img src="images/logo.jpg" alt="">
+                <!-- crear los enlaces -->
+                <!-- enlace de anclaje -->
+                <nav>  
+                <a href="#home" class="btn btn-primary">Home</a>
+                <a href="#novedades" class="btn btn-primary">Novedades</a>
+                <a href="#categoria" class="btn btn-primary">Categoria</a>
+                <a href="#contacto" class="btn btn-primary">Contacto</a>
+                </nav>
+            </div>
+        </header>
+        <section class="container" id="home">
+            <br>
+            <p></p>
+            <!-- redes sociales iconos-->
+        </section>
+    </div>
+
+<!--seccion novedades-->
+
+<section class="container" id="novedades">
+    <h2>Novedades</h2>
+
+<div class="box">
+    <img src="images/novedades/book1.jpg" alt="">
+    <h3>Novedad 1</h3>
+    <p>
+        Tafur está en prisión. Trata de reconstruir su vida a través de sus memorias para llegar a entender qué lo llevó a cometer ese cruel asesinato. Una extraña enfermedad que lo aqueja desde pequeño ha hecho que se mueva entre dos extremos: una vida tranquila pero llena de horribles visiones.
+    </p>
+
+</div>
+
+<div class="box">
+    <img src="images/novedades/book2.jpg" alt="">
+    <h3>Novedad 2</h3>
+    <p>Probablemente no podrás evitar que al entregar tu corazón, en cualquier tipo de relación interpersonal, puedas llegar a recibir alguna dosis de dolor.  Para algunos es el engaño, para otros la traición; en el peor de los casos es el abuso, incluso, recibido por parte de aquellos que se suponía, debían cuidar de ti.</p>
+    
+</div>
+
+<div class="box">
+    <img src="images/novedades/book3.jpg" alt="">
+    <h3>Novedad 3</h3>
+    <p>Muchas personas que creemos no hacerle daño a los demás, que luchamos en busca de muchos propósitos, hacemos buenas obras y además oramos, no logramos los objetivos y, lo que es peor, a veces nos estancamos y perdemos la esperanza.
+        Existen momentos en nuestra vida en los que sentimos que algo nos hace falta. </p>
+    
+</div>
+</section>
+
+<!--nuevo-->
+<div class="contenedor">
+  <div class="imagen">
+    <img src="images/2.png" alt="Descripción de la imagen">
+  </div>
+  <div class="texto">
+    <h2>Nueva colección</h2>
+    <p>De la diversidad de fauna y flora en Colombia surge una variada gastronomía esencialmente criolla, con poca influencia de cocinas extranjeras. Los platillos colombianos varían en preparación e ingredientes por región e incorporan las tradiciones de las culturas española, indígena y negra.<br><br>
+        Algunos de los ingredientes más comunes en las preparaciones son cereales como el arroz y el maíz, tubérculos como la papa y la yuca, variedades de leguminosas (fríjoles), carnes como la de vaca, gallina, cerdo, cabra, cuy, pescados y mariscos.</p>
+  </div>
+</div>
+
+<!--seccion categoria-->
+<section class="container" id="categoria">
+    <h2>Categoria</h2>
+
+<div class="box">
+    <img src="images/Libro 5.jpg" alt="">
+    <h3>Cultura</h3>
+    <p>Las categorías culturales son la forma arquetípica de categorías en las que normalmente se basan las categorías individuales e institucionales . Las categorías culturales tienden a describir nuestras experiencias cotidianas del mundo y nuestro conocimiento cultural acumulado.</p>
+
+</div>
+
+<div class="box">
+    <img src="images/Libro 1.jpg" alt="">
+    <h3>Ensayo</h3>
+    <p>El propósito de un ensayo varía según su tipo: en el crítico es emitir juicios sobre un hecho o fenómeno; el argumentativo busca persuadir por medio de razones, datos y otras evidencias; el ensayo literario expone reflexiones sobre un tema usando un lenguaje creativo.</p>
+    
+</div>
+
+<div class="box">
+    <img src="images/Libro 6.jpg" alt="">
+    <h3>Historia</h3>
+    <p>Historia social: se centra en el estudio de las relaciones sociales, la estructura social, las clases sociales y los movimientos sociales. Historia cultural: examina las expresiones culturales, como el arte, la literatura, la música y las creencias, y cómo han evolucionado a lo largo del tiempo.</p>   
+</div>
+</section>
+<!-- seccion del contacto -->
+
+<section id="contacto">
+    <h2>Contacto</h2>
+    <h2>Cotiza tus libros</h2>
+
+    <form action="mailto:andremarin44@gmail.com" method="post">
+       <div class="campo"> <input type="text" placeholder="Escribe tu nombre" required></div>
+       <br>
+        <div class="campo"><input type="text" placeholder="Escribe tu apellido" required></div>
+        <br>
+        <div class="campo"><input type="text" placeholder="Escribe tu asunto" required></div>
+        <br>
+        <div class="campo"><input type="email" placeholder="Escribe tu correo electronico" required></div>
+        <br>
+        <div class="campo"><select name="categoria" id=""></div>
+            <option value="categoria">Categoria</option>
+            <option value="Cultura">Cultura</option>
+            <option value="Ensayo">Ensayo</option>
+            <option value="Historia">Historia</option>
+            <option value="Drama">Drama</option>
+            <option value="Superación personal">Superación personal</option>
+
+        </select>
+        <br>
+        <div class="campo"><textarea name="mensaje" id="" cols="10" rows="5" placeholder="Escribe tu mensaje"></textarea></div>
+        <br>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+        <button type="reset" class="btn btn-primary">Cancelar</button>
+
+    </form>
+
+</section>
+<!-- mapa -->
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.4880699568866!2d-75.57629548474934!3d6.199156828567498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e468287861a634f%3A0xb2d7f336e2d797de!2slibreria%20nacional!5e0!3m2!1ses!2sco!4v1643903636219!5m2!1ses!2sco" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+<!-- pie de pagina-->
+ 
+<footer class="cover">
+    <img src="images/logo.jpg" alt="Logo">
+    &copy;2024.Medellín-Antioquia.
+</footer>    
+</body>
+</html>
