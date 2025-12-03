@@ -1,0 +1,241 @@
+/*configurales globales en css*/
+:root{
+    /*colores*/
+    --fondo:rgb(255, 255, 255);
+    --colorFooter:#000;
+    --colorHeader:rgba(2, 2, 19, 0.438);
+
+    /*Fuentes*/
+    --textos:'Roboto', sans-serif;
+    --titulos:'Lato', sans-serif;
+    --colorTextos:#000;
+
+}
+
+/*body*/
+body{
+    font-family:var(--textos);
+    /*background-color: var(--fondo)!important;*/
+    color: var(--colorTextos);
+    font-size: 1.2rem;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+h1{
+    font-family:var(--titulos);
+    color: var(--colorTextos);
+    font-size:3.5rem;
+    text-align: center;
+    font-weight: bold;
+    /*background-color: rgb(29, 133, 218);*/
+}
+
+h2{
+    font-family:var(--titulos);
+    color: var(--colorTextos);
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+.home-wrapper{
+    background:linear-gradient(rgba(235, 229, 229, 0.603),rgba(17, 17, 17, 0.746)),url('../images/background.png') no-repeat center top;
+    background-size: cover;
+    color:var(--fondo);
+    height: 100vh;
+}
+header{
+    width: 100%;
+    position:fixed;/*header esta en posición fija*/
+    padding: 10px 0;
+}
+
+/*selector compuesto de etiquetas*/
+header img{
+    width: 150px;
+    height: 80px;
+}
+
+header nav{
+    float: right;
+    margin-top: 8px;
+}
+
+header nav a{
+    color: var(--fondo);
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 10px;
+    padding: 10px 15px;
+}
+
+header nav a.active{
+    background-color: rgb(226, 192, 42);
+    border-radius: 3px;
+}
+
+header nav a:hover{
+    color: rgb(202, 223, 18);
+}
+
+header nav a.active:hover{
+    color:#000;
+}
+
+.container{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*sección home*/
+/*los identificadores en css se representan por (#) 
+y en html se representan por id
+*/
+#home{
+    text-align: center;
+    padding: 250px 0 150px;
+}
+
+/*combinación de identificador y selector de etiqueta h1*/
+#home h1{
+    color:white;
+    margin-bottom: 45px;
+    line-height: 1.2;
+}
+
+/*combinación de identificador y clase .divider*/
+#home .divider{
+    width:90px;
+    border-top: 5px solid rgb(226, 192, 42);
+    margin: 0 auto;
+}
+
+#home p{
+    margin-top: 40px;
+    color: white;
+    padding-left: 185px;
+}
+
+section{
+    padding: 80px 0;
+}
+
+/*aplicar combinanción de selectores de etiquetas en este
+caso seria section y h2
+*/
+
+section h2{
+    text-align: center;
+    margin-bottom: 65px;
+    font-size: 3.0rem;
+    font-weight: bold;
+}
+
+p{
+    text-align: justify;/*justificar  textos*/
+}
+
+/*dividir los servicios en tres columnas*/
+/*combinar el identificador servicios y la clase box*/
+#categoria .box{
+    display: inline-block;
+    width: 33%;/*dividir el 100% * 3, el resultado es 33% */
+    padding: 8px; 
+       
+}
+
+#categoria .box img{
+    padding-left: 30%;
+    padding-bottom: 10px;
+}
+#categoria .box img{
+    width: 80%;
+}
+
+#categoria .box h3{
+    text-align: center;
+}
+/*nuevo*/
+.contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .imagen {
+    flex: 1;
+  }
+  .texto {
+    flex: 2;
+    margin: 0px 15px;
+  }
+  /* Ajusta el tamaño de la imagen según tus necesidades */
+  .imagen img {
+    max-width: 100%;
+    height: auto;
+  }
+
+/*novedades*/
+#novedades .box{
+    display: inline-block;
+    width: 33%;
+    padding: 1%;
+    text-align: center;
+}
+
+#novedades .box img{
+    width: 50%;
+}
+
+
+/*footer*/
+footer{
+    width: 100%;
+    background-color: grey;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    padding: 20px 0;
+}
+footer img {
+    width: 100px; /* Ancho del logo */
+    height: auto; /* Altura automática para mantener la proporción */
+}
+
+/*Contacto*/
+#contacto{
+    background-image: url('../images/map-image.png');
+    background-color: grey;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    background-size: cover;
+}
+
+#contacto h2{
+    color:#fff;
+}
+
+#contacto input,
+textarea,select{
+    width: 600px;
+    padding: 20px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 1;
+    background-color: rgb(248, 246, 246);
+    font-weight: bold;
+}
+
+select{
+    margin-bottom: 30px !important;
+
+
+}
