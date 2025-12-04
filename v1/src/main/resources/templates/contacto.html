@@ -1,0 +1,34 @@
+<!-- contacto.html -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto</title>
+</head>
+<body>
+<header>
+    <h1>Contacto</h1>
+    <nav>
+        <a th:href="@{/}">Inicio</a>
+        <a th:href="@{/novedades}">Novedades</a>
+        <a th:href="@{/categoria}">Categorías</a>
+        <a th:href="@{/contacto}">Contacto</a>
+    </nav>
+</header>
+<main>
+    <h2>Formulario de Contacto</h2>
+    <form th:action="@{/enviarContacto}" method="post">
+        <label>Nombre:</label>
+        <input type="text" name="nombre" required>
+
+        <label>Email:</label>
+        <input type="email" name="email" required>
+
+        <label>Mensaje:</label>
+        <textarea name="mensaje" required></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+</main>
+</body>
+</html>
