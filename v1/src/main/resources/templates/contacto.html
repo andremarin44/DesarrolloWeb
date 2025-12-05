@@ -17,15 +17,15 @@
 </header>
 <main>
     <h2>Formulario de Contacto</h2>
-    <form th:action="@{/enviarContacto}" method="post">
+    <form th:action="@{/users/enviarContacto}" method="post">
         <label>Nombre:</label>
         <input type="text" name="nombre" required>
 
         <label>Email:</label>
         <input type="email" name="email" required>
 
-        <label>Mensaje:</label>
-        <textarea name="mensaje" required></textarea>
+        <label>Teléfono:</label>
+        <input type="tel" name="telefono" required>
 
         <button type="submit">Enviar</button>
     </form>
