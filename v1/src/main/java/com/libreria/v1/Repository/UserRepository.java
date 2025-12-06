@@ -6,6 +6,8 @@ import org.springframework.stereotype.Repository;
 import com.libreria.v1.Model.UserModel;
 @Repository
 
+
 public interface UserRepository extends JpaRepository <UserModel, Long>{
-    
+    UserModel findByCorreo(String correo);
 }
+

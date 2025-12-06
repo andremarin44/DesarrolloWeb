@@ -1,23 +1,41 @@
-<!-- index.html -->
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
 <head>
-<meta charset="UTF-8">
-<title>Inicio</title>
-<link rel="stylesheet" th:href="@{/css/styles.css}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio web proyecto 1</title>
+    <link rel="stylesheet" th:href="@{/CSS/styles.css}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,400&display=swap" rel="stylesheet">
+    
+
 </head>
 <body>
-<header>
-<h1>Libreria</h1>
-<nav>
-<a th:href="@{/}">Inicio</a>
-<a th:href="@{/novedades}">Novedades</a>
-<a th:href="@{/categoria}">Categorías</a>
-<a th:href="@{/contacto}">Contacto</a>
-</nav>
-</header>
-<main>
-<p>Explora nuestras novedades y categorías.</p>
-</main>
+    <div class="home-wrapper">
+        <header>
+            <div class="container">
+                <img th:src="@{/images/logo.jpg}" alt="Logo">
+                <nav>
+                    <a th:href="@{/}" class="btn btn-primary">Home</a>
+                    <a th:href="@{/novedades}" class="btn btn-primary">Novedades</a>
+                    <a th:href="@{/categoria}" class="btn btn-primary">Categoria</a>
+                    <a th:href="@{/contacto}" class="btn btn-primary">Contacto</a>
+                </nav>
+            </div>
+        </header>
+        
+        <section class="container" id="home">
+            <br>
+            <p>Bienvenido a nuestra librería</p>
+            <!-- redes sociales iconos-->
+        </section>
+    </div>
+
+    <footer class="cover">
+        <img th:src="@{/images/logo.jpg}" alt="Logo">
+        &copy;2024.Medellín-Antioquia.
+    </footer>
 </body>
 </html>
